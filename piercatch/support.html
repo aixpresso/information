@@ -1,12 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Piercatch Support</title>
-  </head>
-  <body>
-    <h1>Piercatch Support</h1>
-    <p>This page provides support information for the Piercatch application.</p>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pier Catch Support</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --text: #163047;
+      --muted: #5f7386;
+      --accent: #0d6e8a;
+      --border: #d9e4ee;
+      --shadow: 0 18px 44px rgba(24, 56, 82, 0.08);
+      --max-width: 860px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(13, 110, 138, 0.12), transparent 32%),
+        linear-gradient(180deg, #eef5fb 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .page {
+      width: min(100% - 32px, var(--max-width));
+      margin: 48px auto;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 40px 40px 24px;
+      background: linear-gradient(135deg, #0d6e8a 0%, #1d8ea9 100%);
+      color: #ffffff;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 42rem;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .content {
+      padding: 34px 40px 40px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 1.28rem;
+      line-height: 1.25;
+      color: #12324d;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 18px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 0 8px;
+    }
+
+    .contact-card {
+      margin-top: 8px;
+      padding: 18px 20px;
+      border: 1px solid #cde0eb;
+      border-radius: 16px;
+      background: #f7fbfd;
+    }
+
+    .contact-card a {
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(100% - 20px, var(--max-width));
+        margin: 20px auto;
+      }
+
+      .hero,
+      .content {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="card">
+      <header class="hero">
+        <span class="eyebrow">Support</span>
+        <h1>Pier Catch</h1>
+      </header>
+
+      <section class="content">
+        <h2>Contact</h2>
+        <p>
+          If assistance is needed with Pier Catch, support is available by email at
+          <a href="mailto:aixpressostudios@gmail.com">aixpressostudios@gmail.com</a>.
+        </p>
+
+        <h2>Support Topics</h2>
+        <p>Support is available for questions related to:</p>
+        <ul>
+          <li>gameplay issues or unexpected behavior</li>
+          <li>in-app purchase restoration</li>
+          <li>ad removal purchase questions</li>
+          <li>advertising consent options</li>
+        </ul>
+
+        <h2>Privacy</h2>
+        <p>
+          The privacy policy for Pier Catch is available here:
+          <a href="privacy.html">Privacy Policy</a>
+        </p>
+      </section>
+    </article>
+  </main>
+</body>
 </html>
